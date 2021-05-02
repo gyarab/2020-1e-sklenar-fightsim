@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" cacheShape="false" centerShape="false" maxHeight="480.0" maxWidth="720.0" minHeight="480.0" minWidth="720.0" prefHeight="480.0" prefWidth="720.0" scaleShape="false" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rocnikovaprace.FXMLDocumentController">
+    <children>
+        <Region fx:id="HrdinaPozadi" layoutY="287.0" prefHeight="195.0" prefWidth="720.0" style="-fx-background-color: #DCDCDC;" />
+        <Button fx:id="BtnUtek" disable="true" layoutX="593.0" layoutY="409.0" mnemonicParsing="false" onAction="#Utek" prefHeight="25.0" prefWidth="106.0" text="Utek" />
+        <Button fx:id="BtnHeal" layoutX="445.0" layoutY="409.0" mnemonicParsing="false" onAction="#Heal" prefHeight="25.0" prefWidth="106.0" text="Heal" />
+        <Button fx:id="BtnObrana" layoutX="593.0" layoutY="362.0" mnemonicParsing="false" onAction="#Obrana" prefHeight="25.0" prefWidth="106.0" text="Obrana" />
+        <Button fx:id="BtnUtok" layoutX="445.0" layoutY="362.0" mnemonicParsing="false" onAction="#Utok" prefHeight="25.0" prefWidth="106.0" text="Utok" />
+        <Label fx:id="HPHrdina" layoutX="422.0" layoutY="318.0" text="HP" visible="true">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ProgressBar fx:id="HPHrdinaBar" layoutX="445.0" layoutY="323.0" prefHeight="18.0" prefWidth="253.0" progress="1.0" />
+        <Region fx:id="MonstraPozadi" layoutX="399.0" prefHeight="101.0" prefWidth="322.0" style="-fx-background-color: #DCDCDC;" />
+        <ProgressBar fx:id="HPMonstraBar" layoutX="466.0" layoutY="50.0" prefHeight="18.0" prefWidth="234.0" progress="1.0" />
+        <ToggleButton fx:id="BtnStats" layoutY="311.0" mnemonicParsing="false" onAction="#Stats" text="Show Stats" />
+        <TextArea fx:id="StatsText" editable="false" layoutX="88.0" layoutY="312.0" prefHeight="162.0" prefWidth="155.0" visible="false" />
+        <Label fx:id="HPMonstra" layoutX="445.0" layoutY="48.0" text="HP">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="MonstraJmeno" alignment="CENTER_RIGHT" layoutX="534.0" layoutY="14.0" maxHeight="28.0" maxWidth="165.0" minHeight="28.0" minWidth="165.0" prefHeight="28.0" prefWidth="165.0" text="Prvni Slime">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font>
+        </Label>
+        <Region fx:id="PozadiNext" layoutX="187.0" layoutY="159.0" prefHeight="89.0" prefWidth="279.0" style="-fx-background-color: DCDCDC;" visible="false" />
+        <Button fx:id="BtnNext" layoutX="301.0" layoutY="215.0" mnemonicParsing="false" onAction="#Next" text="Next" visible="false" />
+        <TextArea fx:id="MonstrStatsText" editable="false" layoutX="179.0" prefHeight="101.0" prefWidth="220.0" visible="false" />
+        <ToggleButton fx:id="BtnMonstStats" layoutX="407.0" layoutY="7.0" mnemonicParsing="false" onAction="#MonstraStats" prefHeight="42.0" prefWidth="98.0" text="Show Monster &#10;Stats" />
+        <Label fx:id="NextExp" layoutX="201.0" layoutY="176.0" prefHeight="17.0" prefWidth="260.0" text="" visible="false" />
+        <Label fx:id="NextLvlUp" layoutX="201.0" layoutY="195.0" prefHeight="17.0" prefWidth="260.0" text="" visible="false" />
+      <ImageView fx:id="ImgSlime" fitHeight="126.0" fitWidth="200.0" layoutX="517.0" layoutY="101.0">
+         <image>
+            <Image url="@Slime.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgZombie" fitHeight="177.0" fitWidth="74.0" layoutX="609.0" layoutY="107.0" visible="false">
+         <image>
+            <Image url="@Zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgKostlivec" fitHeight="153.0" fitWidth="98.0" layoutX="583.0" layoutY="108.0" visible="false">
+         <image>
+            <Image url="@Kostlivec.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
